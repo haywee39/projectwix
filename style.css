@@ -1,0 +1,547 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;    
+}
+
+nav{ 
+    position:fixed; 
+    display: flex;
+    place-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #28282B;   /*matte black*/ 
+    justify-content: center;
+    z-index: 1;
+    font-size: 14px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: normal;
+    color: white;  
+}
+
+nav li a:hover{
+    color: #A9A9A9;
+}
+
+.navbar_ul{
+    display: flex;   
+}
+
+.navbar_ul li {
+    list-style: none;
+    display: inline;
+    margin: 2vw;
+}
+
+.navbar_ul li a{
+    text-decoration: none;
+}
+
+.nav_log{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+.nav_log li {
+    list-style: none;
+    display: inline;
+    margin: 6px;
+}
+
+.nav_log li a{
+    text-decoration: none;
+}
+
+/* the initial div cargif fixed position  */
+.cargif-back{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    place-items: center;
+    justify-content: center;
+}
+
+.race-car{
+    position: fixed; 
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* first main div over the cargif transparent background  */
+.new{
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    place-items: center;
+    text-align: center;   
+}
+
+.circleY{
+    position: absolute;
+    width:120px;
+    height: 120px;
+    border-radius: 100px;
+    border: white solid 3px;
+    top:18%;
+    justify-content: center;
+    align-items: center;  
+}
+
+.car_logo{
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-top: 7px;
+    animation: ayo 3s infinite;  
+}
+
+@keyframes ayo {
+    0% {
+        transform: rotate(-90deg);
+    } 
+    50%{
+        transform: rotateX(90deg);
+}
+}
+
+
+h1{
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-family: 'Crushed', cursive;
+    font-size:54px;
+    letter-spacing: 3px; 
+    font-weight: 730;   
+}
+
+.vintage{
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size:17px;
+    letter-spacing: 2px;
+    top: 55%;
+}
+
+.social{
+    display: flex;
+    position: absolute;
+    color: white;
+    bottom: -25%;
+    height: 50px;
+}
+
+#links{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.fa-brands{
+    padding: 8px;   
+}
+
+.chatbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color:black;
+    z-index: 1;
+    bottom: 20px;
+    right: 20px;    
+}
+
+.material-symbols-outlined{
+    font-size: 35px;
+    color: white;
+}
+
+.times{
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.dialogue{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    display: grid;
+    justify-content: baseline;
+    position: absolute;
+    visibility: hidden;
+    width: 350px;
+    height: 500px;
+    border-radius: 25px;
+    background-color: bisque;
+    bottom: 0px;
+    right: 0px;
+}
+
+.dialogue:target {
+    visibility: visible;
+}
+
+.nav-area{
+    width:350px;
+    height: 80px;
+    background-color: #28282B;   /*matte black*/ 
+    border-radius: 25px 25px 0px 0px;
+    display: flex;
+}
+
+.foot-area{
+    margin-bottom: -200%;
+    width:350px;
+    height:80px;
+    background-color: #28282B;   /*matte black*/ 
+    border-radius:0px 0px 25px 25px ;
+    display: block;
+    align-items: flex-start;
+}
+
+/* second main div over the cargif.. black-red background  */
+#SERVICES{
+    position: absolute;
+    width:100%;
+    height: 100vh;
+    background-color: black; 
+    /* background-image: linear-gradient(45deg,rgb(34, 31, 31), rgb(32, 2, 2));  */
+    /* background-image: url(./plywoodcolorpexels-fwstudio-129731.jpg); */
+    background-image: url(./sanddesrtmiha-rekar-gEJR6-C76lU-unsplash.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: -140%;         
+ } 
+
+
+.service{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    padding-top: 20vh;
+}
+
+.dash1{
+    color: white;
+}
+    
+.circle-section{
+    display: flex;
+    margin-top: 50px;
+    width:auto;
+    text-align: center;
+    justify-content:center;
+    align-items: center; 
+}
+
+.circleX{
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-align: center;
+    line-height:25px; 
+}
+
+.round{
+    width: 120px;
+    height: 120px;
+    border-radius: 70px;
+    border: white solid 2px;
+    transform: translateX(55%);
+    top: 50%;
+    left: 50%;
+    margin: 0, auto;
+}
+
+.task{
+    margin-top: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin:15px;  
+}
+
+.details{
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+/* third main div over the cargif.. white space  */
+
+#works{
+    position: absolute;
+    width: 100%;
+    height: 155vh;
+    background-color: white;
+    bottom: -290%;
+    color: black;
+    text-align: center;
+    justify-content:center;
+    align-items: center; 
+}
+
+.our_work{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    padding-top: 10vh;
+    color: black;
+}
+
+.dash2{
+    color: black;
+}
+
+.ayo{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    color: black;
+    padding-top: 2vh;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+}
+
+img{ 
+    width: 340px;
+    height: 240px;
+} 
+
+.parent{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.parent:hover .child{
+    visibility: visible;
+    opacity: 0.8;
+    color: white;
+  
+}
+
+.child{
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    position: absolute;
+    width: 340px;
+    height: 240px;
+    background-color: grey;
+    opacity: 0;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+}
+.child h3 {
+    padding-top: 5vh;
+}
+
+.child a{
+    text-decoration: none;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    bottom: left;
+    margin-top: 30px;
+   
+}
+
+ /* fourth main div over the cargif.. grey pattern background   */
+#about{
+    position: absolute;
+    width: 100%;
+    height: 115vh;
+    background-image:url(./unknown);
+    bottom: -370%;
+    text-align: center;
+}
+
+.about_box{
+    position: relative;
+    width: 50%;
+    height: 80vh;
+    margin-left: 25%;
+    margin-top: 8%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+.about_us{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    padding-top: 6vh;
+    color: black;
+
+}
+
+.dash3{
+    color: black;
+}
+
+.oke{
+    margin-top: 20px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: black;
+    line-height: 25px;
+}
+
+
+/* fifth main div over the cargif.. grey background  */
+#contact{
+    position: absolute;
+    background-image: url(./unknown );
+    width: 100%;
+    height: 185vh;
+    bottom: -560%;
+    justify-content: center;
+    margin: auto;
+}
+
+.find_us_car_pic{
+    margin-top: 4%;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+}
+
+.find_box{
+    position: relative;
+    width: 50%;
+    height: 110vh;
+    margin-left: 25%;
+    margin-top: 4%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+
+.find_us{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 8vh;
+    color: black;
+}
+
+.find_box1{
+    display: flex;
+}
+.first1{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 5%;
+    padding-left: 10%;
+    text-align: left;
+    width: 50%;
+    height: 70vh;
+}
+
+.first2{
+    margin-top: 3%;
+    width: 50%;
+    height: 70vh;
+    font-weight: 600;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    color: black;
+    letter-spacing: 2px;
+    text-align: left;
+    line-height: 30px;
+}
+
+form{
+    width: 300px;
+    
+}
+
+form label{
+    display: flex;
+    color: #28282B;
+}
+form input{
+    width: 300px;
+    height: 35px;
+    border: 1px light black;
+    color: #28282B;
+   
+}
+
+.textarea{
+    color: #28282B;
+    width: 300px;
+}
+
+.submit{
+    background-color: #28282B;
+    font-weight: 600;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    letter-spacing: 2px;
+    font-size: 17px;
+    color: white;
+}
+
+footer{
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 25vh;
+    background-color: #28282B;
+    color: white;
+    bottom: -585%;
+}
+
+.social-footer{
+    display: flex;
+    position: absolute;
+    color: white;
+    height: 50px;
+}
+
+.copyright-foot{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    margin-top: 90px;
+    text-align: end;
+    align-items: baseline;
+    justify-content: baseline;
+}
